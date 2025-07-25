@@ -1,4 +1,5 @@
 local isTabletActive = false
+local tabletObj = Config.tabletObject
 local tab
 
 RegisterNetEvent('tablet:open')
@@ -6,7 +7,7 @@ AddEventHandler('tablet:open', function()
 	--anim
 	startAnim()
 	-- tablet öffnen
-	TriggerServerEvent('myMDT:openSystem')
+	--TriggerServerEvent('myMDT:openSystem')
 end)
 
 Citizen.CreateThread(function()
